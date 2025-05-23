@@ -1,3 +1,8 @@
 def call() {
-	sh 'mvn clean install'
+	stage ("build") {
+		steps {
+			sh 'mvn clean install'
+		}
+	}
+
 }
